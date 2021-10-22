@@ -1,0 +1,11 @@
+[Unit]
+Description=Heart rate web app.
+
+[Service]
+Type=simple
+ExecStart=yarn start:build
+WorkingDirectory=/root/projects/heart-rate-monitor/web-app
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

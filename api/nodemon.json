@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "exec": "tsc -noEmit && npm run build && NODE_ENV=development node dist",
+  "ext": "ts, js"
+}

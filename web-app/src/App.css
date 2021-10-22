@@ -1,0 +1,59 @@
+p {
+  color: white;
+}
+
+.App-logo {
+  width: 100%;
+  pointer-events: none;
+}
+
+.hr-container {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+}
+
+.hr-container h2 {
+  color: white;
+  margin: 5px;
+}
+
+.hr-container img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 10px 15px black) brightness(1);
+}
+
+.hr-container img.black {
+  filter: brightness(0);
+}
+
+.hr-container img.down-beat {
+  width: 95%;
+  height: 95%;
+  transition-duration: 100ms;
+}
+
+.hr-container img.up-beat,
+.hr-container img.no-beat {
+  width: 100%;
+  height: 100%;
+  transition-duration: 900ms;
+}
+
+.hr-container p {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 200px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 10rem;
+}
+
+.App-link {
+  color: #61dafb;
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=Heart rate monitor websocket server.
+
+[Service]
+Type=simple
+ExecStart=yarn start
+WorkingDirectory=/root/projects/heart-rate-monitor/api
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
